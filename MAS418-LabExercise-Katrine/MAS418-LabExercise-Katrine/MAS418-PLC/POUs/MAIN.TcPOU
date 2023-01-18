@@ -5,6 +5,9 @@
 VAR
 	bEnable : BOOL;
 	bStart : BOOL;
+	nINT : INT := -32768;
+	nUINT : UINT := 65535;
+	fREAL : REAL := 255.255;
 END_VAR
 ]]></Declaration>
     <Implementation>
