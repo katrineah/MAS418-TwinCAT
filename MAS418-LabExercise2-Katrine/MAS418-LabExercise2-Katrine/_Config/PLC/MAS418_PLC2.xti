@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.35" ClassName="CNestedPlcProjDef">
+	<Project GUID="{9A962490-A7C2-4580-B159-B059E20999DE}" Name="MAS418_PLC2" PrjFilePath="..\..\MAS418_PLC2\MAS418_PLC2.plcproj" TmcFilePath="..\..\MAS418_PLC2\MAS418_PLC2.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{7C479B3A-94DB-58FA-7750-58F37D20BEA0}">
+			<Name>MAS418_PLC2 Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Contexts>
+				<Context>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>10000000</CycleTime>
+				</Context>
+			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+</TcSmItem>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{f3dc0777-4812-4220-9976-754d46cef9b5}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	TimeDateInit : DATE_AND_TIME := DATE_AND_TIME#2023-2-7-14:51:0;
+	TimeInit : TIME := TIME#5000MS;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

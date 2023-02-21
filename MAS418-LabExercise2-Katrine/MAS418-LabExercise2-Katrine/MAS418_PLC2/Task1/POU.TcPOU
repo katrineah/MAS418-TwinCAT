@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="POU" Id="{99c0f409-0535-4753-b519-30628b42ccf3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM POU
+VAR
+	pointer1 : POINTER TO DATE_AND_TIME := ADR(GVL.TimeDateInit);
+	reference1 : REFERENCE TO TIME REF= GVL.TimeInit;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[pointer1^ := DT#2024-2-8-14:51:0;
+reference1 := TIME#4000ms;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
